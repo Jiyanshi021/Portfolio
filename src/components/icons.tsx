@@ -23,6 +23,27 @@ export const Icons = {
       />
     </svg>
   ),
+   huggingface: (props: IconProps) => (
+  <svg
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-label="HuggingFace"
+    {...props}
+  >
+    <circle cx="12" cy="12" r="11" fill="currentColor" />
+    <circle cx="9" cy="10" r="1.3" fill="#fff" />
+    <circle cx="15" cy="10" r="1.3" fill="#fff" />
+    <path
+      d="M8 14c.7 1.7 2.2 2.7 4 2.7s3.3-1 4-2.7"
+      fill="none"
+      stroke="#fff"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+),
+
   youtube: (props: IconProps) => (
     <svg
       width="32px"

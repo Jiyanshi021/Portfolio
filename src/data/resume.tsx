@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "AI/ML and data science enthusiast building practical solutions for climate, governance, and real-world problems.",
   summary:
-    "I’m a Computer Science and Engineering student and research-focused AI/ML developer. I’ve worked as a Research Intern at ARIES, where I built complete geospatial pipelines on ERA5 and Landsat data to study long-term climate variability and urban heat island behaviour. I also build end-to-end applications like an AI-powered rural governance assistant (FastAPI + React + Qdrant), SEO automation tools, and multilingual RAG/SQL chatbots for schemes and internships. I love taking messy real-world data, analysing it, and turning it into clean, usable tools with simple interfaces—and I actively participate in hackathons, internships, and tech communities to keep learning and shipping.",
+    "I’m a Computer Science and Engineering student and research-focused AI/ML developer. I’ve worked as a Research Intern at ARIES, where I built complete geospatial pipelines on ERA5 and Landsat data to study long-term climate variability and urban heat island behaviour. I also build end-to-end applications like an AI-powered rural governance assistant (FastAPI + React + Qdrant), SEO automation tools, and multilingual RAG/SQL chatbots for schemes and internships. I love taking messy real-world data, analysing it, and turning it into clean, usable tools with simple interfaces—and I actively participate in hackathons, internships, and tech communities to keep learning.",
   // avatarUrl: "/me.png", // put your image in /public and set the correct path
   npmCommand: "npx jiyanshi-batra",
   skills: [
@@ -51,9 +51,15 @@ export const DATA = {
     "Power BI",
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
-  ],
+  { href: "/", icon: HomeIcon, label: "Home" },
+
+  {
+    href: "https://drive.google.com/file/d/1Bq-b0zy3VSLi9oyNaxco5H4lcO9A2kIZ/view?usp=sharing",
+    icon: Icons.googleDrive,
+    label: "Resume",
+  },
+],
+
   contact: {
     email: "jiyanshibatra753@gmail.com",
     social: {
@@ -71,13 +77,12 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://www.linkedin.com/in/jiyanshi-batra-2348732b4/",
-        icon: Icons.x,
-
-        navbar: true,
-      },
+      HuggingFace: {
+  name: "HuggingFace",
+  url: "https://huggingface.co/joshi-deepak08",
+  icon: Icons.huggingface, 
+  navbar: true,
+},
       email: {
         name: "Send Email",
         url: "#",
@@ -241,7 +246,7 @@ export const DATA = {
 
     {
   title: "AI-Powered Rural Governance Assistant",
-  href: "",
+  href: "https://github.com/Jiyanshi021/Panchayat-Sahayika",
   dates: "",
   active: true,
   description:
@@ -260,6 +265,11 @@ export const DATA = {
   ],
   links: [
     {
+      type: "Website",
+      href: "https://github.com/Jiyanshi021/Panchayat-Sahayika",
+      icon: <Icons.globe className="size-3" />,
+    },
+    {
       type: "Github",
       href: "https://github.com/Jiyanshi021/Panchayat-Sahayika",
       icon: <Icons.github className="size-3" />,
@@ -271,7 +281,7 @@ export const DATA = {
 
     {
   title: "SEO Internal Link Suggestion Tool",
-  href: "",
+  href: "https://huggingface.co/spaces/jiyanshi02/Seo-internal-linker",
   dates: "",
   active: true,
   description:
@@ -288,6 +298,11 @@ export const DATA = {
     "Pandas"
   ],
   links: [
+    {
+      type: "Website",
+      href: "https://huggingface.co/spaces/jiyanshi02/Seo-internal-linker",
+      icon: <Icons.globe className="size-3" />,
+    },
     {
       type: "Github",
       href: "https://github.com/Jiyanshi021/SEO-Interlinking-Tool",

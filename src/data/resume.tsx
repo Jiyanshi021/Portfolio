@@ -246,7 +246,7 @@ export const DATA = {
 
     {
   title: "AI-Powered Rural Governance Assistant",
-  href: "https://github.com/Jiyanshi021/Panchayat-Sahayika",
+  href: "https://youtu.be/SvaaQusU9nU?si=S9WfEV2PBO07HTdO",
   dates: "",
   active: true,
   description:

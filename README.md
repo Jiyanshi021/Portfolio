@@ -1,4 +1,4 @@
-# Portfolio — Deepak Joshi
+# Portfolio — Jiyanshi
 
 
 A modern developer portfolio built using **TypeScript**, **React**, and **Tailwind CSS**.

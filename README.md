@@ -1,4 +1,4 @@
-# Portfolio — Jiyanshi
+# Portfolio — Deepak Joshi
 
 
 A modern developer portfolio built using **TypeScript**, **React**, and **Tailwind CSS**.
@@ -8,112 +8,258 @@ This portfolio showcases my projects, skills, experiences, and achievements with
 
 ## **Live Demo**
 
-**Website:** [https://your-portfolio-link-here.com](https://portfolio-main-five-bay.vercel.app/)
+**Website:** [https://www.portfolio.com](https://portfolio-main-five-bay.vercel.app/)
 
-<img width="558" height="644" alt="image" src="https://github.com/user-attachments/assets/874e9562-7347-4f28-9c2b-3b66c7cd0860" />
+<img width="564" height="631" alt="image" src="https://github.com/user-attachments/assets/ae9c6cf9-53c8-45e3-a95a-17d3a107e0e2" />
+
 
 ---
 
-# **How to Run the Project Locally**
+# **Table of Contents**
 
-### **1. Clone the Repository**
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Folder Structure](#folder-structure)
+4. [How to Run Locally](#how-to-run-locally)
+5. [Architecture & Design Decisions](#architecture--design-decisions)
+
+   * Component Architecture
+   * Mermaid Diagram
+6. [UI/UX Approach](#uiux-approach)
+7. [Pipeline / Rendering Flow](#pipeline--rendering-flow)
+8. [Challenges & Trade-Offs](#challenges--trade-offs)
+9. [Performance & Deployment Notes](#performance--deployment-notes)
+
+---
+
+#  **Overview**
+
+This repository contains my **personal developer portfolio**, built to present:
+
+* My projects
+* My skills
+* My achievements
+* My experience
+* My social presence
+
+The portfolio is built with a **modular configuration system**, where projects, skills, and experience can be updated from a single file — making it extremely easy to maintain.
+
+The UI is fully responsive, supports animations, and is optimized for **ATS recruiters + hiring managers + technical reviewers**.
+
+Core stack:
+
+* **React** (UI Framework)
+* **TypeScript** (type safety & maintainability)
+* **TailwindCSS** (rapid styling)
+* **Framer Motion** (animations)
+* **Vercel** (deployment)
+
+---
+
+#  **Features**
+
+### 🔹 Modern UI + Animations
+
+Smooth transitions, hover effects, and motion-based interactions.
+
+### 🔹 Dynamic Project Cards
+
+Each project contains:
+
+* Title
+* Description
+* Tech stack
+* Icons
+* Links
+* Images
+
+### 🔹 Fully Responsive Layout
+
+Mobile, tablet, and desktop optimized.
+
+### 🔹 Config-Driven Content
+
+Easily add/update projects in a single file.
+
+### 🔹 SEO-Optimized
+
+Meta tags, OpenGraph, and clean semantic structure.
+
+### 🔹 High Lighthouse Score
+
+Optimized for performance, accessibility, and SEO.
+
+---
+
+#  **Folder Structure**
+
+```
+portfolio-main/
+│
+├── src/
+│   ├── components/         # UI components (Cards, NavBar, Footer, Buttons)
+│   ├── data/               # Project data, skill config, experience config
+│   ├── pages/              # Landing, Projects, Contact, About
+│   ├── assets/             # Images, icons
+│   ├── styles/             # Tailwind global styles
+│   ├── App.tsx             # Main app
+│   ├── main.tsx            # Entry point
+│
+├── public/                 # Icons, favicon, static files
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── README.md
+```
+
+---
+
+#  **How to Run Locally**
+
+## **1. Clone Repo**
 
 ```bash
-git clone https://github.com/JoshiDeepak08/portfolio-main.git
+git clone https://github.com/JoshiDeepak08/portfolio-main
 cd portfolio-main
 ```
 
-### **2. Install Dependencies**
+## **2. Install Dependencies**
 
 ```bash
 npm install
 ```
 
-### **3. Start Development Server**
+## **3. Run Dev Server**
 
 ```bash
 npm run dev
 ```
 
-Your app will now run at:
+App opens at:
 
 ```
 http://localhost:5173
 ```
 
-### **4. Build for Production**
+## **4. Build for Production**
 
 ```bash
 npm run build
 ```
 
----
+## **5. Preview Production Build**
 
-# **Architecture & Key Decisions**
-
-### **Tech Stack**
-
-* **React + TypeScript** → type safety & scalable component structure
-* **Tailwind CSS** → utility-first styling for rapid UI development
-* **ShadCN UI Components** → consistent, accessible UI building blocks
-* **Framer Motion** → smooth animations and transition effects
-* **Vite** → blazing-fast bundler for modern frontend apps
-
-### **Key Decisions**
-
-1. **Component-driven architecture** → clean separation of UI sections like Hero, Projects, Skills, Contact.
-2. **Config-based project list** → All projects are stored as objects, making them easy to update & manage.
-3. **Tailwind theming** → Enables consistent brand colors, dark/light modes, and responsive layouts.
-4. **Minimal dependencies** → Ensures fast load times & high Lighthouse scores.
-5. **Mobile-first design** → The portfolio is fully optimized for phones, tablets, and desktop screens.
+```bash
+npm run preview
+```
 
 ---
 
-# **Approach**
+#  **Architecture & Design Decisions**
 
-The goal was to build a **high-performance, aesthetically modern**, and **flexible** portfolio that can:
+## **Why React + TypeScript?**
 
-* Display key projects with screenshots, stack icons, and external links
-* Present skills using categorized badges
-* Highlight achievements and real-world experience
-* Provide a clean and elegant first impression to recruiters & clients
-* Remain easy to update as new projects or experiences are added
+* Better maintainability
+* Strong typing prevents runtime errors
+* Scalable component architecture
 
-Every section is modular and driven by JSON-like config files, making the portfolio maintainable and future-proof.
+## **Why TailwindCSS?**
 
----
+* Utility-first CSS
+* Fast UI development
+* Consistent, theme-based design
 
-# **Flow Design**
+## **Why Framer Motion?**
 
-### **User → Browser → React UI → Project Config → Render Components**
+* Declarative animation system
+* Smooth transitions
+* Highly customizable
 
-1. **React loads configuration** (projects, skills, links).
-2. UI components dynamically render cards, grids, buttons, and animations.
-3. Images + icons are optimized via Vite.
-4. Components rely on Tailwind for instant styling.
-5. Deployments (e.g., Vercel) bundle and serve static assets efficiently.
+## **Why Vercel?**
 
-This ensures:
-
-* Near-instant load times
-* SEO-friendly metadata
-* Mobile-responsiveness
-* Highly customizable visual layout
+* Zero-config deploy
+* Instant global CDN
+* Best for frontend frameworks
 
 ---
 
-# **Challenges & Trade-offs**
+## **Mermaid Diagram**
 
-### **Challenges**
+```mermaid
+flowchart TD
 
-* Ensuring consistent animations across devices
-* Managing responsive design for complex grid layouts
-* Choosing a UI library that integrates smoothly with Tailwind
-* Balancing aesthetic design with maintainable structure
+A[User] --> B[React UI]
+B --> C[Project Config Data]
+B --> D[Components: Header, Hero, Projects, Skills]
+D --> E[Framer Motion Animations]
+E --> B
 
-### **Trade-offs**
+C --> D
+B --> F[Vercel Deployment]
+```
 
-* Using **many animations** can impact initial load time on low-end devices
-* Heavy reliance on Tailwind means less CSS flexibility for newcomers
-* Static project config requires manual updates — no CMS integration (by design for speed)
+---
 
+#  **UI/UX Approach**
+
+###  Clean + Minimal
+
+Modern typography, whitespace, and contrast.
+
+###  Visual Hierarchy
+
+Projects > Skills > Experience > Contact
+
+###  Component Reusability
+
+Cards, badges, layouts, grids, buttons — all reusable.
+
+###  Motion-Enhanced Interactions
+
+Micro-animations for:
+
+* Hover effects
+* Section reveals
+* Project card transitions
+
+---
+
+# **Pipeline / Rendering Flow**
+
+### 1️⃣ User loads website → React renders initial page
+
+### 2️⃣ Config data loads into components
+
+### 3️⃣ Components use Tailwind classes for layout
+
+### 4️⃣ Framer Motion animates sections
+
+### 5️⃣ Vercel serves static site from CDN
+
+---
+
+# **Challenges & Trade-Offs**
+
+### Challenge 1 — Maintaining multiple project images
+
+✔ Solved by storing them in `/assets`.
+
+### Challenge 2 — Balancing animations vs performance
+
+✔ Light motion settings used.
+
+### Trade-Off — Hard-coded config
+
+Pros: Fast & simple
+Cons: Requires manual updates
+
+---
+
+# **Performance & Deployment Notes**
+
+* Built using **Vite** → Fastest dev server
+* Deployed on **Vercel** → Zero downtime
+* Tailwind ensures extremely small CSS bundle
+* TypeScript catches UI errors early
+
+---
